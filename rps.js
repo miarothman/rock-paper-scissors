@@ -34,19 +34,19 @@ let result = text.toUpperCase();
 
 function playRound(playerSelection, computerSelection){
 if (playerSelection === computerSelection){
-    console.log("It's a tie!");
+    return "It's a tie!";
 } else if (playerSelection === gameOptions[0] && computerSelection === gameOptions[1]){
-    console.log("You Lose! Paper beats Rock!");
+   return "You Lose! Paper beats Rock!";
 } else if (playerSelection === gameOptions[0] && computerSelection === gameOptions[2]){
-    console.log("You Win! Rock beats Scissors!");
+    return "You Win! Rock beats Scissors!";
 } else if (playerSelection === gameOptions[1] && computerSelection === gameOptions[0]){
-    console.log("You Win! Paper beats Rock!");
+    return "You Win! Paper beats Rock!";
 } else if (playerSelection === gameOptions[1] && computerSelection === gameOptions[2]){
-    console.log("You Lose! Scissors beats Paper!");
+    return "You Lose! Scissors beats Paper!";
 } else if (playerSelection === gameOptions[2] && computerSelection === gameOptions[0]){
-    console.log("You Lose! Rock beats Scissors!");
+    return "You Lose! Rock beats Scissors!";
 } else if (playerSelection === gameOptions[2] && computerSelection === gameOptions[1]){
-    console.log("You Win! Scissors beats Paper");
+    return "You Win! Scissors beats Paper";
 }
 }
 const playerSelection = gameOptions[0];
