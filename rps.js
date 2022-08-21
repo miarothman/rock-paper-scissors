@@ -1,6 +1,8 @@
 let gameOptions = ['rock', 'paper', 'scissors'];
 let playerScore = 0;
 let computerScore = 0;
+let playerSelection;
+let computerSelection;
 
 function getComputerChoice() {
    let randomChoice = Math.random();
@@ -34,12 +36,21 @@ if (playerSelection === computerSelection){
 }
 }
 
-let playerSelection = prompt("Choose Your Weapon").toLowerCase();
-let computerSelection = getComputerChoice();
+function game() {
+    for(let i = 0; i < 5; i++) {
+    playerSelection = prompt("Choose Your Weapon").toLowerCase();
+    computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+    console.log("Player: " + playerScore,"|" + " Computer: " + computerScore); 
+}
+if (playerScore > computerScore) {
+    return "YOU WIN!";
+} else if (playerScore < computerScore){
+    return "COMPUTER WINS!"
+} else {
+    return "IT'S A TIE! REMATCH!"
+}
+}
 
-console.log("First to 5 Wins!")
-console.log(playRound(playerSelection, computerSelection));
-console.log("Player: " + playerScore,"|" + " Computer: " + computerScore);
-
-
-//console.log(game());
+console.log("Best Out Of 5 Wins!")
+console.log(game());
