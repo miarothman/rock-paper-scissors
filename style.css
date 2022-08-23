@@ -7,10 +7,39 @@ font-family: 'Silkscreen', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Silkscreen&display=swap');
 
 body {
-    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #fff;
-    background-color: #000;
     font-family: 'Silkscreen', cursive;
+    background-color: #222222;
+}
+
+h1, h3, h5{
+    line-height: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 10px solid #fff;
+    width: 700px;
+    padding: 20px 0;
+}
+
+.content1 {
+    font-size: 18px;
+    color: #000;
+    background-color: rgba(255, 255, 255);
+    width: 450px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 15px;
 }
 
 #rockBtn, #paperBtn, #scissorsBtn {
@@ -18,7 +47,7 @@ body {
     color: #000;
     padding: 10px;
     width: 100px;
-    border: 2px solid #fff;
+    border: 2px solid #000;
 }
 
 #rockBtn {
@@ -32,3 +61,4 @@ body {
 #scissorsBtn {
     background-color: #01FFCA;
 }
+
