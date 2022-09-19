@@ -1,4 +1,13 @@
-# rock-paper-scissors
-We’re going to make a simple implementation of grade-school classic “rock paper scissors”. For the moment we’re just going to play the game from the browser console.
-***
-We will revisit this project in a later lesson and add a Graphical User Interface with buttons and text.
+## Rock Paper Scissors
+This is a rock paper scissors web app.     
+User can play 5 rounds of the game against the computer. First to get to 5 points, wins!
+
+Live Demo: https://miarothman.github.io/rock-paper-scissors/
+
+Built Using:
+- HTML5
+- CSS3
+- Javascript
+
+Screenshot:
+<img src="images/screenshot.png">
